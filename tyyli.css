@@ -1,0 +1,126 @@
+
+.navbar {
+    width: 350px;  
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
+
+
+
+}
+body { background-image: url(logo.png);
+        background-repeat: none;
+        background-size:cover;
+        background-attachment: fixed; }
+
+        a {
+            text-decoration: none;
+            color: rgb(109, 84, 80);
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: rgb(193, 173, 148);
+        }
+
+
+ #etusivulogo {
+    margin-left: 200px;
+    width: 1000px;
+    height: 1000px;
+ }
+
+
+h1 {color:rgb(233, 140, 148);
+    font-size: 150px;
+    text-align: center;
+  font-family: "Knewave", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#logo {
+      position: fixed;   /* kiinnittää kuvan suhteessa sivuun */
+      top: 30px;            /* etäisyys ylhäältä */
+      left: 50px;           /* etäisyys vasemmalta */
+      width: 20%;         /* kuvan leveys pieneksi */
+      max-width: 240px;
+      height: auto;         /* korkeus skaalaa suhteessa */
+      z-index: 1000;
+    }
+
+    .yhteystietolaatikko {
+        background-color: rgb(241, 203, 202);
+        border: 4px solid rgb(109, 84, 80);
+        border-radius: 60px;
+        width: 600px;
+        padding: 60px 140px;
+        margin: 65px auto;
+        text-align: left;
+        font-size: 32px;
+        box-shadow: 8px 8px 10px rgb(143, 125, 104);
+         }
+
+         figcaption {
+            color: rgb(109, 84, 80);
+            font-size: 40px;
+            font-weight: bold;
+            margin-top: 8px;
+            font-family: 'Figtree';
+         }
+
+.käsityöt {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    figure {
+        text-align: center;
+    
+    }
+
+    img {
+        width: 270px;
+        height: auto;
+    }
+
+    .korut {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    figure {
+        text-align: center;
+        
+    }
+
+    img {
+        width: 270px;
+        height: auto;
+    }
+
+         @media (max-width: 600px) {
+            .käsityöt {
+                flex-direction: column;
+                align-items: center;
+                flex-wrap: nowrap;
+            }
+         }
+    
+  
+      
+            
+
+
+
+
+
+    
+
+
+      
+      
