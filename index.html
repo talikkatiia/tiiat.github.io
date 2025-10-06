@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fi">
+ <head>
+
+    <link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+
+ <title>UniikkiUurastus</title>
+ <meta charset="utf-8">
+ <meta name="viewpoint" content="width=device-width, initial-scale=1">
+ <link href="tyyli.css" rel="stylesheet">
+
+ <style>
+
+    
+
+    .navbar {
+       display: flex;
+        background-color: rgb(109, 84, 80);
+       width: 1020px;
+       position: absolute;
+       top: 20px;
+       right: 10px;
+       height: 60px;
+       justify-content: flex-end;
+       padding-right: 30px;
+        
+     }
+
+     .navbar a {
+        font-size: 27px;
+        font-family: 'Figtree', sans-serif;
+        font-weight: bold;
+        color: rgb(193, 173, 148);
+        text-decoration: none;
+        padding: 20px 30px;
+        display: block;
+        
+     }
+
+
+     .navbar a:hover {
+        background-color:  #8b6b55;
+    }
+
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: rgb(193, 173, 148);
+        min-width: 180px;
+        box-shadow:  0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: rgb(85, 65, 62);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: rgb(235, 230, 224);
+    }
+
+    .show {
+        display: block;
+    }
+
+    p {
+        font-size: 35px;
+        font-weight: bold;
+        padding: 30px;
+        text-align: left;
+        margin-left: 110px;
+        margin-right: 90px;
+        font-family: 'Figtree';
+
+    }
+ </style>
+
+</head>
+ <body>
+    <main>
+        <header>
+
+            <div class="navbar">
+                <a href="index.html"> ETUSIVU</a>
+                
+                
+                <div class="dropdown">
+                    <a href="mallituotteet.html" id="mallituotteetBtn"> MALLITUOTTEET</a>
+                    <div class="dropdown-content" id="mallituotteetMenu">
+                        <a href="käsityöt.html"> KÄSITYÖT</a>
+                        <a href="korut.html"> KORUT</a>
+                     </div>
+                     </div>
+
+                     <a href="yhteystiedot.html"> YHTEYSTIEDOT</a>
+                     </div>
+
+                     <script>
+                        document.getElementById("mallituotteetBtn").addEventListener("click", function(e) {
+                            e.preventDefault();
+                            document.getElementById("mallituotteetMenu").classList.toggle("show");
+                            });
+
+                            window.addEventListener("click", function(e) {
+                                if (!e.target.matches('#mallituotteetBtn')){
+                                    const menu = document.getElementById("mallituotteetMenu");
+                                    if (menu.classList.contains("show")){
+                                        menu.classList.remove("show");
+                                       }
+                                       }
+                                       }); 
+                                        </script>
+
+
+
+
+        <img src="UniikkiUurastus.png" id="logo">
+
+
+<h1 style="font-size: 70px; text-align: left; margin-top:165px; margin-left: 320px; font-family: 'Knewave', cursive;"> Mikä on UniikkiUurastus</h1>
+<p> <span style="color: rgb(143, 125, 104);">Kaikki ketkä olette kiinnostuneita ja arvostatte käsin tehtyjä tuotteita, <br> olette löytäneet oikeaan paikkaan.</span>
+    <br><br>
+    <span style="color: rgb(143, 125, 104);"> Tarvitsetko kenties talveksi uuden pipon tai arjen piristykseksi korun, mutta et löydä kaupasta haluamaasi. Käy selaamassa mallituotteita ja</span><span style="color: rgb(85, 65, 62);"> <a link href="yhteystiedot.html">ota yhteyttä</a></span> <span style="color: rgb(143, 125, 104);"> minuun, niin suunnitellaan sinulle mieluisa tuote!</span>
+
+</p>
+
+
+
+
+</header></main>
+
+</body>
+</html>
+
